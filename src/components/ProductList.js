@@ -9,7 +9,7 @@ function ProductList() {
   // console.log(products);
 
   const product = useContext(productContext);
-  console.log("Context: ", product);
+  // console.log("Context: ", product);
 
   return (
     <>
