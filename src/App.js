@@ -9,6 +9,7 @@ import Details from "./components/Details";
 import Cart from "./components/Cart";
 import Default from "./components/Default";
 import Modal from "./components/Modal";
+import Success from "./components/Success";
 // import AntForm from "./components/AntForm";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" exact component={ProductList} />
         <Route path="/details" component={Details} />
         <Route path="/cart" component={Cart} />
+        <Route path="/paymentSuccess" component={Success} />
         <Route component={Default} />
       </Switch>
       <Modal />

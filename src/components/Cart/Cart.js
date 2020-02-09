@@ -6,7 +6,7 @@ import { productContext } from "../../context";
 import CartList from "./CartList";
 import CartTotals from "./CartTotals";
 
-function Cart() {
+function Cart(props) {
   const product = useContext(productContext);
 
   if (product.cart.length > 0) {
@@ -15,7 +15,7 @@ function Cart() {
         <Title name="your" title="cart" />
         <CartColumns />
         <CartList value={product} />
-        <CartTotals value={product} />
+        <CartTotals value={product} history={props.history} />
       </>
     );
   } else {
